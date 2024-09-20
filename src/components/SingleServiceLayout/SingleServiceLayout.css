@@ -1,0 +1,78 @@
+.singleServ {
+  display: flex;
+}
+.servImg {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
+
+.singleServ {
+  position: relative;
+  width: 23%;
+  height: 300px;
+  margin: 10px;
+  display: flex;
+  flex: 1 1 40%;
+  max-width: 300px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #090f1a;
+  color: white;
+  border-radius: 18px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.servImg {
+  width: 100%;
+}
+.layoutBtns{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.layoutBtns button{
+    width: 50%;
+    height: 40px;
+    border: none;
+    /* margin-bottom: 15px; */
+}
+#editBtn{
+    background-color: #38BDF8;
+}
+#deleteBtn{
+    background-color: #98caf0;
+}
+.servTitle {
+  width: 100%;
+  background: #1A4260;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.servAddressPg {
+  text-align: center;
+  line-height: 1.3;
+  color: white;
+  font-size: 13px;
+  padding: 2px 5px;
+  /* border: 1px solid red; */
+}
+
+.servDesc {
+  width: 100%;
+  text-align: center;
+  padding: 3px 10px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.641);
+}
+

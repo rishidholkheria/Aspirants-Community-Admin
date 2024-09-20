@@ -1,0 +1,43 @@
+.admin_nav{
+  height: 100px;
+  display: flex;
+  /* border: 2px solid red; */
+  background-color: #090f1a;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5vw;
+  color: white;
+}
+
+.orn_logo{
+  /* border: 2px solid blue; */
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.orn_pages {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  gap: 20px; 
+  /* border: 2px solid blue; */
+}
+
+.pageBtn {
+  flex: 1; 
+  text-align: center; 
+  padding: 10px; 
+  border-radius: 5px; 
+  text-decoration: none;
+  color: white;
+}
+
+.pageBtn :hover .pageBtn p{
+  color: red;
+}
+
+.pageBtn p, .pageBtn div {
+  margin: 0;
+}

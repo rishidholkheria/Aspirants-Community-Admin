@@ -1,0 +1,63 @@
+
+  
+  
+  /* .form_contents input,
+  select {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 15px;
+    border-radius: 3px;
+    width: 80%;
+    background-color: #f2f2f2;
+    margin: 15px 0;
+    font-family: inherit;
+  }
+  
+  .form_contents textarea {
+    height: 150px;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    max-width: 80%;
+    min-height: 100px;
+    font-family: inherit;
+    background-color: #f2f2f2;
+  } */
+/*   
+  .add_pg_btn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .pg_btn {
+    padding: 10px;
+    margin: 20px;
+    color: white;
+    background-color: green;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 10%;
+  }
+  
+  .removeEdit{
+    width: 35%;
+  }
+  
+  .remove_pg, .editPriority{
+    width: 100%;
+    height: 50%;
+    max-height: 50%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 10px;
+    
+  }
+  
+  
+  
+  
+  
+   */
