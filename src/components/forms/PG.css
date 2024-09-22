@@ -35,7 +35,7 @@
 
 .add_pg {
   width: 50%;
-  min-width: 50%;
+  min-width: 50vw;
   height: auto;
   max-height: 1000px;
   border-radius: 8px;
@@ -102,16 +102,18 @@ select {
   outline: none;
   padding: 9px;
   margin: 20px;
-  color: white;
-  background-color: #1FBB78;
+  background-color: #194160;
+  color: #37B9F3;
+  font-weight: 700;
+  border: 2px solid #37B9F3;
   border-radius: 10px;
   cursor: pointer;
   width: 30%;
 }
 
-.remove_pg {
+.show_pg {
   width: 50%;
-  min-width: 40%;
+  min-width: 40vw;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   padding: 10px;
   /* border: 2px solid red; */

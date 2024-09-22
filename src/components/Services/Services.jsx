@@ -263,7 +263,7 @@ const Services = ({ type, title }) => {
           </div>
         </div>
 
-        <div className="remove_pg">
+        <div className="show_pg">
           {Object.keys(contactObjects).map((id) => (
             <SingleServiceLayout
               id={id}

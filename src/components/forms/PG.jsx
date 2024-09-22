@@ -9,7 +9,7 @@ import {
 import { database, storage } from "../../firebase";
 import "./PG.css";
 import SingleServiceLayout from "../SingleServiceLayout/SingleServiceLayout";
-import { Form } from "react-router-dom";
+import Loader from "../Loader/Loader";
 
 const PGForm = () => {
   const [formState, setFormState] = useState({
@@ -29,10 +29,13 @@ const PGForm = () => {
   const [error, setError] = useState("");
   const [isEditing, setIsEditing] = useState(false);
 
+  const [pgLoader, setPgLoader] = useState(true);
+
   useEffect(() => {
     const dataRef = ref(database, "pg");
     const unsubscribe = onValue(dataRef, (snapshot) => {
       const data = snapshot.val();
+      setPgLoader(false);
       setPgData(data);
     });
 
@@ -102,8 +105,9 @@ const PGForm = () => {
       description: "",
       images: "",
       priority: "",
-      imageFile: null, // Reset image file
+      imageFile: null,
     });
+    document.getElementById("file-input").value = "";
     setIsEditing(false);
   };
 
@@ -181,18 +185,6 @@ const PGForm = () => {
     }
   };
 
-  const handleDelete = async (key) => {
-    if (window.confirm("Are you sure you want to delete this record?")) {
-      try {
-        await remove(ref(database, `pg/${key}`));
-        alert("Record deleted successfully.");
-      } catch (err) {
-        console.error("Error deleting record:", err);
-        setError("Error deleting record.");
-      }
-    }
-  };
-
   return (
     <div className="dashboard">
       <p className="form_heading">PGs & Apartments</p>
@@ -251,6 +243,7 @@ const PGForm = () => {
             />
 
             <input
+              id="file-input"
               type="file"
               placeholder="Image of Location"
               onChange={handleImageChange}
@@ -265,7 +258,7 @@ const PGForm = () => {
                 {loading ? "Saving..." : isEditing ? "Update" : "Add"}
               </button>
               <button className="pg_btn" onClick={resetForm}>
-                Cancel
+                Clear
               </button>
             </div>
 
@@ -273,16 +266,22 @@ const PGForm = () => {
           </div>
         </div>
 
-        <div className="remove_pg">
-          {Object.keys(pgData)
-            .reverse()
-            .map((id) => (
-              <SingleServiceLayout
-                id={id}
-                serviceData={pgData[id]}
-                handleEdit={handleEdit}
-              />
-            ))}
+        <div className="show_pg">
+          {pgLoader ? (
+            <Loader />
+          ) : (
+            Object.keys(pgData)
+              .reverse()
+              .map((id) => {
+                return (
+                  <SingleServiceLayout
+                    id={id}
+                    serviceData={pgData[id]}
+                    handleEdit={handleEdit}
+                  />
+                );
+              })
+          )}
         </div>
       </div>
     </div>

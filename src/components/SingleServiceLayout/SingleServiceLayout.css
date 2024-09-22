@@ -27,30 +27,30 @@
 .servImg {
   width: 100%;
 }
-.layoutBtns{
-    position: absolute;
-    bottom: 0;
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-top: 15px;
+.layoutBtns {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 15px;
 }
 
-.layoutBtns button{
-    width: 50%;
-    height: 40px;
-    border: none;
-    /* margin-bottom: 15px; */
+.layoutBtns button {
+  width: 50%;
+  height: 40px;
+  border: none;
+  /* margin-bottom: 15px; */
 }
-#editBtn{
-    background-color: #38BDF8;
+#editBtn {
+  background-color: #38bdf8;
 }
-#deleteBtn{
-    background-color: #98caf0;
+#deleteBtn {
+  background-color: #98caf0;
 }
 .servTitle {
   width: 100%;
-  background: #1A4260;
+  background: #1a4260;
   padding: 10px;
   margin: 0;
   text-align: center;
@@ -68,11 +68,17 @@
   /* border: 1px solid red; */
 }
 
-.servDesc {
+.servDescPg {
   width: 100%;
-  text-align: center;
-  padding: 3px 10px;
-  font-size: 13px;
-  color: rgba(255, 255, 255, 0.641);
+  text-align: start;
+  padding: 12px 8px;
+  font-size: 10px;
+  color: rgba(200, 199, 199, 0.641);
+  overflow: hidden;
+  white-space: normal;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Show at least 2 lines */
+  -webkit-box-orient: vertical;
 }
 

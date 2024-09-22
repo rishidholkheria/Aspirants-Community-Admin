@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "orn-admin-12",
     "public": "build",
     "ignore": [
       "firebase.json",

@@ -4,7 +4,7 @@ import { auth } from "../../firebase";
 import { Link } from "react-router-dom";
 
 const Header = () => {
-  const Logout = () => {
+  const logoutHandler = () => {
     auth.signOut();
     <Link to="/" style={{ textDecoration: "none" }}></Link>;
   };
@@ -34,6 +34,11 @@ const Header = () => {
 
         <Link className="pageBtn" to="/study-material">
           <p>Study Material</p>
+        </Link>
+        <Link>
+          <button className="logoutBtn" onClick={logoutHandler}>
+            Logout
+          </button>
         </Link>
       </div>
     </div>

@@ -20,6 +20,7 @@ const SingleServiceLayout = ({ id, serviceData, handleEdit }) => {
       <img className="servImg" src={serviceData.images} alt="RoomImage" />
       <p className="servTitle">{serviceData.name}</p>
       <p className="servAddressPg">{serviceData.address}</p>
+      <p className="servDescPg">{serviceData.description}</p>
       <div className="layoutBtns">
         <button id="editBtn" onClick={() => handleEdit(id)}>
           <i className="fa-solid fa-pen-to-square"></i>

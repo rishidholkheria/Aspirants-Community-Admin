@@ -5,14 +5,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: #101a2d;
+    color: white;
 }
 
 .input_add_pg{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 50px;
+    background-color: #090F1A;
+
+    border-radius: 18px;
     /* border: 2px solid red; */
 }
 
@@ -20,13 +26,15 @@
     width: 50%;
     padding: 10px;
     margin-top: 20px;
-    background-color: #3cc43c;
-    background-image: linear-gradient(315deg, #32DE7A 0%, #10b684dc 44%);
-    color: white;
+    background-color: #194160;
+    color: #37B9F3;
+    font-weight: 700;
+    font-size: 15px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
 }
+
 
 .login input{
     font-size: 1rem;

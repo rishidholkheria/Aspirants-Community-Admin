@@ -46,9 +46,9 @@ const Login = () => {
 
     return (
         <div className="login">
-            <h2 className="form_heading">ORN Admin Login</h2>
 
             <div className="input_add_pg">
+            <h2 className="form_heading">ORN Admin Login</h2>
                 <input
                     type="text"
                     placeholder="Enter Email"
@@ -63,7 +63,7 @@ const Login = () => {
                     onChange={(e) => setPassword(e.target.value)}
                 />
 
-                <button className="loginBtn" onClick={onSubmitHandler}>
+                <button type="submit" className="loginBtn" onClick={onSubmitHandler}>
                     LOGIN
                 </button>
             </div>

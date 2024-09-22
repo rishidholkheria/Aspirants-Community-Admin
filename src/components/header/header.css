@@ -34,6 +34,19 @@
   color: white;
 }
 
+.logoutBtn{
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: #194160;
+  color: #37B9F3;
+  font-weight: 700;
+  /* font-size: 15px; */
+  border: none;
+  border-radius: 18px;
+  cursor: pointer;
+}
+
 .pageBtn :hover .pageBtn p{
   color: red;
 }
